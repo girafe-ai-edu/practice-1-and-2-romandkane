@@ -4,3 +4,9 @@ Develop a program that asks the user for an integer 4-digit number and calculate
 3 + 1 + 4 + 1 = 9
 
 """
+
+numbers = input("Enter 4-digit number: ")
+
+digits_sum = sum([int(n) for n in numbers])
+
+print(" + ".join(numbers), "=", digits_sum)
